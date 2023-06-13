@@ -1,0 +1,23 @@
+*{
+    background-color: rgb(119, 105, 133);
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.order{ 
+align-items: center;
+text-align: center;
+}
+.square{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    color: black;
+}
+.circle{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgb(40, 220, 85);
+    color: black;
+}
