@@ -1,0 +1,24 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+nav{
+    background-color: black;
+    padding: 1rem 2rem;
+    font-size: 25px;
+    display: flex;
+    gap: 2rem;
+}
+
+ /* text-decoration: none;
+    font-weight: bold; */
+nav a{
+    color: white;
+}
+
+nav a.active{
+    text-decoration: none;
+    font-weight: bold;
+   color: yellowgreen;
+} 

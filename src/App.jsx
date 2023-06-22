@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 // import Added from "./components/addanynumber";   // simple it render the number
 // import Practice1 from "./useState"     // simple useState example
 // import Practice2 from "./simpleRender"    // useState count example
@@ -15,7 +15,7 @@ import React from "react";
 // import Usereducer from "./Usereducer"  // this is the simple example of usereducer 
 // import CreateDiv from "./components/createDiv"   // this is when we click the button one new div is created
 // import CreateShape from "./components/create_shape"; //this is to add the shape in react
-
+// import CreateShape from "./components/createShape";
 function App() {
   return (
     <>
@@ -34,6 +34,7 @@ function App() {
       {/* <Usereducer /> */}
       {/* <CreateDiv /> */}
       {/* <Added /> */}
+      {/* <CreateShape /> */}
       {/* <CreateShape /> */}
     </>
   )

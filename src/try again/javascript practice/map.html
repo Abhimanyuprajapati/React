@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>render the map element by using map in js </title>
+</head>
+<body>
+    <div id="para">
+        <h1>
+            hello world
+        </h1>
+    </div>
+    <script>
+       
+        const person=[
+        {
+            name:"Akash",
+            rollno:57,
+            age:9,
+        },
+        {
+            name:"vivek",
+            rollno:60,
+            age:18,
+        },
+        {
+            name:"dhiru",
+            rollno:45,
+            age:26,
+        },
+        {
+            name:"priti",
+            rollno:37,
+            age:24,
+        },
+        {
+            name:"manshi",
+            rollno:57,
+            age:32,
+        },
+        {
+            name:"varsha",
+            rollno:55,
+            age:15,
+        }
+        ];
+        // const value=person.map((item)=>{
+        //     return item;
+        // }).filter((item)=>{
+        //     return item.age>=18;
+        // });
+        // const para=document.getElementById('para');
+        // console.log(value);
+        // const para=document.getElementById('para');
+        // const parent=document.createElement('h1');
+        // const node=document.createTextNode(value);
+        // node.appendChild(parent);
+        // parent.appendChild(para);
+        document.getElementById('para').innerHTML = person.map((user) =>{
+           return (`<div>
+      <div>Name: ${user.name}</div>
+      <div>Age: ${user.age}</div>
+      <div>rollno: ${user.rollno}</div>
+    </div>`)
+        })
+
+    </script>
+
+</body>
+</html>

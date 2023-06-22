@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure with best example of SetTimeOut function</title>
+</head>
+<body>
+    <h1>closure with settimeOut function</h1>
+    <!-- <script>
+        // this is by using closure example with settimeout
+       function display(){
+        var i=10;
+            function closure(){
+                console.log(i);
+              setTimeout(() => {    // ()=this is also call anyominus function
+                for (var i=0; i<=5; i++){
+                    console.log(i);
+                }
+              },1000);
+            }
+            return closure();
+       }
+       display()    // function invoketion  is called   
+    </script> -->
+    <!-- <script>
+        function display(){
+        for (var i=1; i<=5; i++){
+            setTimeout(function (){      // this will print only the 6 five time  
+                console.log(i);          // because var is not a block scope 
+            },i*1000)                   // and its referce to the var variable 
+        }
+    }
+    display();
+    </script> -->
+    <!-- <script>
+        //  by using let this is block level scope
+        //if interview tell donot use let then see down
+        function display(){
+        for (let i=1; i<=5; i++){
+            setTimeout(function (){     
+                console.log(i);         
+            },i*1000)                  
+        }
+    }
+    display();
+    </script> -->
+    <script>
+        //if interview tell donot use let 
+        function display(){
+        for (var i=1; i<=5; i++){
+            function close(i){
+            setTimeout(function (){     
+                console.log(i);         
+            },i*1000);
+        }   
+        close(i);               
+        }
+    }
+    display();
+    </script>
+</body>
+</html>

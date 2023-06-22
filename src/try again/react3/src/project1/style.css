@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,100;1,300;1,400&display=swap');
+/* .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: pink;
+}
+.list-item{
+    list-style: none;
+    display: flex;
+}
+.list-item > li{
+    padding: 10px;
+}
+
+footer{
+    background-color: rgb(64, 43, 43);
+} */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    height: 100vh;
+    background-color: #25262c;
+    background-image: url('..\src\assets\react.svg');
+    background-repeat: no-repeat;
+}
+
+.nav{
+    font-family:'Roboto', sans-serif;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    background-color: #21222A;
+    /* color: white; */
+    padding: 0px 10px;
+}
+
+.nav >h3 , .nav > h4{
+    margin: 0px;
+}
+
+.nav > h3{
+    margin-right: 70px;
+    /* justify-content: space-around   ; */
+    color: #61DAFB;
+}
+
+.nav > h4{
+    margin-left: 70px;
+    /* justify-content: space-around   ; */
+    color: rgb(246, 240, 240);
+}
+
+.main{
+    margin: 0px;
+    padding: 57px 27px;
+    color: white;
+}
+
+.heading{
+    color: white;
+}
+
+.list > li{
+    padding-block: 10px;
+}
+
+.list > li::marker{
+    /* list-style: disc; */
+    font-size: 1.9rem;
+    color:  #61DAFB; ;
+}
