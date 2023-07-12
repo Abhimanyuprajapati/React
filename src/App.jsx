@@ -16,6 +16,8 @@
 // import CreateDiv from "./components/createDiv"   // this is when we click the button one new div is created
 // import CreateShape from "./components/create_shape"; //this is to add the shape in react
 // import CreateShape from "./components/createShape";
+// import SearchContact from "./search"
+
 function App() {
   return (
     <>
@@ -36,6 +38,7 @@ function App() {
       {/* <Added /> */}
       {/* <CreateShape /> */}
       {/* <CreateShape /> */}
+      {/* <SearchContact/> */}
     </>
   )
 }
