@@ -19,7 +19,7 @@
 // import SearchContact from "./search"
 // import { Prop_driling } from "./Prop_driling"     // this is props drilling
 // import { Context_Provider } from "./Context_Provider"  // because of props dril context provider came to used
-import Toggle from "./toggle"    // this is for dark and light theme 
+// import Toggle from "./toggle"    // this is for dark and light theme 
 
 
 function App() {
@@ -45,7 +45,7 @@ function App() {
       {/* <SearchContact/> */}
       {/* <Prop_driling /> */}
       {/* <Context_Provider /> */}
-      <Toggle/>
+      {/* <Toggle/> */}
     </>
   )
 }
