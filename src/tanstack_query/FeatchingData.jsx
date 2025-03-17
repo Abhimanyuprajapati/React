@@ -7,6 +7,7 @@ const todogetData = async () => {
     return await response.json();
 }
 
+
 export const FeatchingData = () => {
 
     const {data,error,isPending} = useQuery({
