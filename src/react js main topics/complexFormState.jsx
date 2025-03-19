@@ -1,6 +1,67 @@
 import "./css/style1.css";
 import { useState } from "react";
 
+
+// more best way 
+const Complexformstate=()=>{
+    const [formdetails, setFormdetail]=useState({
+        first: "",
+        second: "",
+        email: "",
+    });
+
+    const formhandler=(event)=>{
+        const field=event.target.name;
+        const value=event.target.value;
+
+        let newformhandler={};
+        if(field==="first"){
+            newformhandler={
+            ...formdetails,
+            first:value
+            };
+        }else if(field==="second"){
+            newformhandler={
+            ...formdetails,
+            second:value
+            };
+        }else{
+            newformhandler={
+                ...formdetails,
+                email:value
+                };
+        }
+        setFormdetail(newformhandler);       
+    }
+    return (
+        <div className="container">
+            <label>First name:</label>
+            <input onChange={formhandler}
+             type="text" 
+             value={formdetails.first} 
+             placeholder="john"
+             name="first"/> 
+
+            <label>Second name:</label>
+            <input onChange={formhandler} 
+             type="text" 
+             value={formdetails.second} 
+             placeholder="chena"
+             name="second"/>
+
+            <label>Email:</label>
+            <input onChange={formhandler} 
+             type="text" 
+             value={formdetails.email} 
+             placeholder="johnchena@110"
+             name="email"/>        
+        </div> 
+    )
+}
+export default Complexformstate;
+
+
+
 /*
 
 //  Method 1 : Brute Force Approach
@@ -181,60 +242,3 @@ export default Complexformstate;
 // export default Complexformstate;
 
 // -----------------------------------------------------------------------
-// more best way 
-const Complexformstate=()=>{
-    const [formdetails, setFormdetail]=useState({
-        first: "",
-        second: "",
-        email: "",
-    });
-
-    const formhandler=(event)=>{
-        const field=event.target.name;
-        const value=event.target.value;
-
-        let newformhandler={};
-        if(field==="first"){
-            newformhandler={
-            ...formdetails,
-            first:value
-            };
-        }else if(field==="second"){
-            newformhandler={
-            ...formdetails,
-            second:value
-            };
-        }else{
-            newformhandler={
-                ...formdetails,
-                email:value
-                };
-        }
-        setFormdetail(newformhandler);       
-    }
-    return (
-        <div className="container">
-            <label>First name:</label>
-            <input onChange={formhandler}
-             type="text" 
-             value={formdetails.first} 
-             placeholder="john"
-             name="first"/> 
-
-            <label>Second name:</label>
-            <input onChange={formhandler} 
-             type="text" 
-             value={formdetails.second} 
-             placeholder="chena"
-             name="second"/>
-
-            <label>Email:</label>
-            <input onChange={formhandler} 
-             type="text" 
-             value={formdetails.email} 
-             placeholder="johnchena@110"
-             name="email"/>        
-        </div> 
-    )
-}
-export default Complexformstate;
