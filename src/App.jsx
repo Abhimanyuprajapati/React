@@ -20,7 +20,9 @@
 // import { Prop_driling } from "./Prop_driling"     // this is props drilling
 // import { Context_Provider } from "./Context_Provider"  // because of props dril context provider came to used
 // import Toggle from "./toggle"    // this is for dark and light theme 
-import { FeatchingData } from "./tanstack_query/FeatchingData"    // fetching data in tankstack query
+// import { FeatchingData } from "./tanstack_query/FeatchingData"    // fetching data in tankstack query
+
+import { Counter } from "./counter/counter"
 
 function App() {
   return (
@@ -46,7 +48,8 @@ function App() {
       {/* <Prop_driling /> */}
       {/* <Context_Provider /> */}
       {/* <Toggle/> */}
-      <FeatchingData/>
+      {/* <FeatchingData/> */}
+      <Counter />
     </>
   )
 }
